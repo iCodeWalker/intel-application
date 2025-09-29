@@ -2,14 +2,15 @@ import "./App.css";
 import Header from "./components/header/header.jsx";
 import LeftPanel from "./components/leftPanel/leftPanel.jsx";
 import MainPanel from "./components/mainPanel/mainPanel.jsx";
-import Layout from "./Layout.jsx";
 
-function App() {
+function Layout() {
   return (
     <div>
-      <Layout />
+      <Header />
+      <LeftPanel />
+      <MainPanel />
     </div>
   );
 }
 
-export default App;
+export default Layout;
