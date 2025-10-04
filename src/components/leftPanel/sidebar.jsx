@@ -13,13 +13,11 @@ const menuItems = [
     ],
   },
   {
-    title: "Walls",
+    title: "Wall",
     children: [
       { label: "Wall textures", value: "wall-textures" },
-      { label: "Front wall", value: "front-wall" },
-      { label: "Back wall", value: "back-wall" },
-      { label: "Left wall", value: "left-wall" },
-      { label: "Right wall", value: "right-wall" },
+      { label: "Wall color", value: "wall-color" },
+      { label: "Wall data", value: "wall-data" },
     ],
   },
   {

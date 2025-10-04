@@ -14,6 +14,9 @@ import OneDoorWardrobe from "./components/data/wardrobe/oneDoorWardrobe.jsx";
 import TwoDoorWardrobe from "./components/data/wardrobe/twoDoorWardrobe.jsx";
 import ThreeDoorWardrobe from "./components/data/wardrobe/threeDoorWardrobe.jsx";
 import FourDoorWardrobe from "./components/data/wardrobe/fourDoorWardrobe.jsx";
+import WallTexture from "./components/data/wall/wallTexture.jsx";
+import WallColor from "./components/data/wall/wallColor.jsx";
+import WallData from "./components/data/wall/wallData.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,15 @@ const router = createBrowserRouter([
       { path: "tile-textures", Component: TileTexture },
       { path: "tile-pricing", Component: TilePricing },
       { path: "tile-filling-color", Component: TileFillingColor },
+    ],
+  },
+  {
+    path: "/data/wall",
+    Component: Layout,
+    children: [
+      { path: "wall-textures", Component: WallTexture },
+      { path: "wall-color", Component: WallColor },
+      { path: "wall-data", Component: WallData },
     ],
   },
   {
