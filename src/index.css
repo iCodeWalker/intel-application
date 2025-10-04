@@ -86,3 +86,12 @@ button:focus-visible {
   scrollbar-width: thin; /* "thin" is about 6px minimum */
   scrollbar-color: #555 transparent;
 }
+
+.MuiDataGrid-cell.MuiDataGrid-cell--textLeft {
+
+}
+
+.css-18bs4cb-MuiDataGrid-root.MuiDataGrid-cell:focus  {
+  outline: none !important;
+  outline-offset: 0px;
+}

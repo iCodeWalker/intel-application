@@ -1,10 +1,10 @@
-import { Button, Stack, TextField } from "@mui/material";
+import { Button, Divider, Stack, TextField } from "@mui/material";
 import SaveIcon from "@mui/icons-material/Save";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 
-import "./tileTexture.scss";
+import "./wardrobeTexture.scss";
 
-const TileTexture = () => {
+const WardrobeTexture = () => {
   const tileData = [
     {
       image: "/floor1.jpg",
@@ -48,8 +48,11 @@ const TileTexture = () => {
     },
   ];
   return (
-    <div className="tile-texture-container">
-      <h1 className="heading">Tile textures</h1>
+    <div className="wardrobe-texture-container">
+      <h1 className="heading">Wardrobe textures</h1>
+      <Divider sx={{ borderBottomWidth: 4 }} />
+
+      <h1 className="heading">Outer textures</h1>
       <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -58,10 +61,10 @@ const TileTexture = () => {
         velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
 
-      <div className="tile-texture-card-container">
+      <div className="wardrobe-texture-card-container">
         {tileData?.map((item) => {
           return (
-            <div className="tile-texture-card">
+            <div className="wardrobe-texture-card">
               <div className="image-container">
                 <img className="image" src={item.image} alt={"Floor"} />
               </div>
@@ -73,18 +76,53 @@ const TileTexture = () => {
                   fullWidth
                 />
               </div>
-              <div className="dimension-container">
-                <TextField
-                  id="outlined-basic"
-                  label="Dimesions"
-                  variant="outlined"
-                  fullWidth
-                />
+            </div>
+          );
+        })}
+      </div>
+      <div
+        style={{
+          margin: "40px",
+          paddingBottom: "40px",
+          display: "flex",
+          alignItems: "left",
+        }}
+      >
+        <Stack direction="row" spacing={3}>
+          <Button
+            variant="contained"
+            startIcon={<AddCircleIcon />}
+            size="medium"
+          >
+            Add New
+          </Button>
+          <Button variant="contained" startIcon={<SaveIcon />} size="medium">
+            Save
+          </Button>
+        </Stack>
+      </div>
+      <Divider sx={{ borderBottomWidth: 3 }} />
+
+      <h1 className="heading">Inner textures</h1>
+      <p className="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+
+      <div className="wardrobe-texture-card-container">
+        {tileData?.map((item) => {
+          return (
+            <div className="wardrobe-texture-card">
+              <div className="image-container">
+                <img className="image" src={item.image} alt={"Floor"} />
               </div>
-              <div className="thickness-container">
+              <div className="name-container">
                 <TextField
                   id="outlined-basic"
-                  label="Thickness"
+                  label="Name"
                   variant="outlined"
                   fullWidth
                 />
@@ -96,7 +134,7 @@ const TileTexture = () => {
       <div
         style={{
           margin: "40px",
-          marginBottom: "200px",
+          paddingBottom: "40px",
           display: "flex",
           alignItems: "left",
         }}
@@ -118,21 +156,21 @@ const TileTexture = () => {
   );
 };
 
-export default TileTexture;
+export default WardrobeTexture;
 
 // #################### API Data Structure ####################
 
-// const tileTexture = [
-//   {
-//     texture: "",
-//     name: "",
-//     allowed_dimensions: "",
-//     allowed_thickness: "",
-//   },
-//   {
-//     texture: "",
-//     name: "",
-//     allowed_dimensions: "",
-//     allowed_thickness: "",
-//   },
-// ];
+// const wardrobeTextture = {
+//   outer_textures: [
+//     {
+//       name: "test",
+//       image: "",
+//     },
+//   ],
+//   inner_textures: [
+//     {
+//       name: "test",
+//       image: "",
+//     },
+//   ],
+// };

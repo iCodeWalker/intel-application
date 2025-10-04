@@ -8,18 +8,18 @@ const menuItems = [
     title: "Floor",
     children: [
       { label: "Tile textures", value: "tile-textures" },
-      { label: "Tile pricing", value: "tile-pricing" },
       { label: "Tile filling color", value: "tile-filling-color" },
+      { label: "Tile pricing", value: "tile-pricing" },
     ],
   },
   {
     title: "Walls",
     children: [
-      "Wall textures",
-      "Front wall",
-      "Back wall",
-      "Left wall",
-      "Right wall",
+      { label: "Wall textures", value: "wall-textures" },
+      { label: "Front wall", value: "front-wall" },
+      { label: "Back wall", value: "back-wall" },
+      { label: "Left wall", value: "left-wall" },
+      { label: "Right wall", value: "right-wall" },
     ],
   },
   {
@@ -37,11 +37,11 @@ const menuItems = [
   {
     title: "Wardrobe",
     children: [
-      "Wardrobe textures",
-      "One door wardrobe",
-      "Two door wardrobe",
-      "Three door wardrobe",
-      "Four door wardrobe",
+      { label: "Wardrobe textures", value: "wardrobe-textures" },
+      { label: "One door wardrobe", value: "one-door-wardrobe" },
+      { label: "Two door wardrobe", value: "two-door-wardrobe" },
+      { label: "Three door wardrobe", value: "three-door-wardrobe" },
+      { label: "Four door wardrobe", value: "four-door-wardrobe" },
     ],
   },
   {
