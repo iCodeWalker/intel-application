@@ -23,13 +23,13 @@ const menuItems = [
   {
     title: "Bed",
     children: [
-      "Bed textures",
-      "Single bed",
-      "Double bed",
-      "King size bed",
-      "Queen size bed",
-      "Poster bed",
-      "Folding bed",
+      { label: "Bed textures", value: "bed-textures" },
+      { label: "Single bed", value: "single-bed" },
+      { label: "Double bed", value: "double-bed" },
+      { label: "King size bed", value: "king-size-bed" },
+      { label: "Queen size bed", value: "queen-size-bed" },
+      { label: "Poster bed", value: "poster-bed" },
+      { label: "Folding bed", value: "folding-bed" },
     ],
   },
   {

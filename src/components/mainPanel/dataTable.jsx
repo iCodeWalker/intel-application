@@ -6,7 +6,14 @@ export default function DataTable({ rows, columns, rowHeight }) {
   const paginationModel = { page: 0, pageSize: 10 };
 
   return (
-    <Paper sx={{ height: "630px", width: "100%", overflowY: "auto" }}>
+    <Paper
+      sx={{
+        height: "auto",
+        maxHeight: "650px",
+        width: "100%",
+        overflowY: "auto",
+      }}
+    >
       <DataGrid
         rows={rows}
         columns={columns}

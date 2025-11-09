@@ -17,6 +17,8 @@ import FourDoorWardrobe from "./components/data/wardrobe/fourDoorWardrobe.jsx";
 import WallTexture from "./components/data/wall/wallTexture.jsx";
 import WallColor from "./components/data/wall/wallColor.jsx";
 import WallData from "./components/data/wall/wallData.jsx";
+import BedTexture from "./components/data/bed/bedTexture.jsx";
+import SingleBed from "./components/data/bed/singleBed.js";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,19 @@ const router = createBrowserRouter([
       { path: "wall-textures", Component: WallTexture },
       { path: "wall-color", Component: WallColor },
       { path: "wall-data", Component: WallData },
+    ],
+  },
+  {
+    path: "/data/bed",
+    Component: Layout,
+    children: [
+      { path: "bed-textures", Component: BedTexture },
+      { path: "single-bed", Component: SingleBed },
+      { path: "double-bed", Component: TwoDoorWardrobe },
+      { path: "king-size-bed", Component: ThreeDoorWardrobe },
+      { path: "queen-size-bed", Component: FourDoorWardrobe },
+      { path: "poster-bed", Component: FourDoorWardrobe },
+      { path: "folding-bed", Component: FourDoorWardrobe },
     ],
   },
   {
